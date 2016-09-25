@@ -20,6 +20,12 @@ class ViewController: UIViewController {
     
     deinit {
         NotificationCenter.default.removeObserver(self)
+    
+    }
+    
+    @IBAction func dismis() {
+     print("dismiss pressed")
+      navigationController?.popViewController(animated: true)
     }
     
     override func viewDidLoad() {
