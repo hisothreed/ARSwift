@@ -35,6 +35,8 @@
 		9E514E5B1D97F34A00EE00D5 /* Test2.dat in Resources */ = {isa = PBXBuildFile; fileRef = 9E514E591D97F34A00EE00D5 /* Test2.dat */; };
 		9E514E5C1D97F34A00EE00D5 /* Test2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 9E514E5A1D97F34A00EE00D5 /* Test2.xml */; };
 		9E8EDC8F1D97305D00BF3DC0 /* vanquish.dae in Resources */ = {isa = PBXBuildFile; fileRef = 9E8EDC8E1D97305D00BF3DC0 /* vanquish.dae */; };
+		9E8FBF5F1DA3FD14005299B4 /* MultiDataSet.dat in Resources */ = {isa = PBXBuildFile; fileRef = 9E8FBF5D1DA3FD14005299B4 /* MultiDataSet.dat */; };
+		9E8FBF601DA3FD14005299B4 /* MultiDataSet.xml in Resources */ = {isa = PBXBuildFile; fileRef = 9E8FBF5E1DA3FD14005299B4 /* MultiDataSet.xml */; };
 		9EF3E6231D96F8E900B73C4B /* StonesAndChips.dat in Resources */ = {isa = PBXBuildFile; fileRef = 9EF3E61F1D96F8E900B73C4B /* StonesAndChips.dat */; };
 		9EF3E6241D96F8E900B73C4B /* StonesAndChips.xml in Resources */ = {isa = PBXBuildFile; fileRef = 9EF3E6201D96F8E900B73C4B /* StonesAndChips.xml */; };
 		9EF3E6251D96F8E900B73C4B /* Tarmac.dat in Resources */ = {isa = PBXBuildFile; fileRef = 9EF3E6211D96F8E900B73C4B /* Tarmac.dat */; };
@@ -165,6 +167,8 @@
 		9E514E591D97F34A00EE00D5 /* Test2.dat */ = {isa = PBXFileReference; lastKnownFileType = file; name = Test2.dat; path = "../../../../../Downloads/Test2 (3)/Test2.dat"; sourceTree = "<group>"; };
 		9E514E5A1D97F34A00EE00D5 /* Test2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Test2.xml; path = "../../../../../Downloads/Test2 (3)/Test2.xml"; sourceTree = "<group>"; };
 		9E8EDC8E1D97305D00BF3DC0 /* vanquish.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = vanquish.dae; sourceTree = SOURCE_ROOT; };
+		9E8FBF5D1DA3FD14005299B4 /* MultiDataSet.dat */ = {isa = PBXFileReference; lastKnownFileType = file; name = MultiDataSet.dat; path = ../../../../../Downloads/MultiDataSet/MultiDataSet.dat; sourceTree = "<group>"; };
+		9E8FBF5E1DA3FD14005299B4 /* MultiDataSet.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = MultiDataSet.xml; path = ../../../../../Downloads/MultiDataSet/MultiDataSet.xml; sourceTree = "<group>"; };
 		9EF3E61F1D96F8E900B73C4B /* StonesAndChips.dat */ = {isa = PBXFileReference; lastKnownFileType = file; name = StonesAndChips.dat; path = "../../../../../Downloads/VuforiaSamples-6-0-112/VuforiaSamples/Resources/Assets/ImageTargets/StonesAndChips.dat"; sourceTree = "<group>"; };
 		9EF3E6201D96F8E900B73C4B /* StonesAndChips.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = StonesAndChips.xml; path = "../../../../../Downloads/VuforiaSamples-6-0-112/VuforiaSamples/Resources/Assets/ImageTargets/StonesAndChips.xml"; sourceTree = "<group>"; };
 		9EF3E6211D96F8E900B73C4B /* Tarmac.dat */ = {isa = PBXFileReference; lastKnownFileType = file; name = Tarmac.dat; path = "../../../../../Downloads/VuforiaSamples-6-0-112/VuforiaSamples/Resources/Assets/ImageTargets/Tarmac.dat"; sourceTree = "<group>"; };
@@ -373,6 +377,8 @@
 		927B76EE1D28070D00C4F5CC /* ImageTargets */ = {
 			isa = PBXGroup;
 			children = (
+				9E8FBF5D1DA3FD14005299B4 /* MultiDataSet.dat */,
+				9E8FBF5E1DA3FD14005299B4 /* MultiDataSet.xml */,
 				9E514E591D97F34A00EE00D5 /* Test2.dat */,
 				9E514E5A1D97F34A00EE00D5 /* Test2.xml */,
 				9E514E491D97DF1A00EE00D5 /* target.dat */,
@@ -493,6 +499,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E8FBF5F1DA3FD14005299B4 /* MultiDataSet.dat in Resources */,
 				9E514E5B1D97F34A00EE00D5 /* Test2.dat in Resources */,
 				9EF3E6231D96F8E900B73C4B /* StonesAndChips.dat in Resources */,
 				9EF3E6261D96F8E900B73C4B /* Tarmac.xml in Resources */,
@@ -508,6 +515,7 @@
 				9E514E4C1D97DF1A00EE00D5 /* target.xml in Resources */,
 				9EF3E6251D96F8E900B73C4B /* Tarmac.dat in Resources */,
 				9E4AD8661D97C26600302B4F /* Dragon.scn in Resources */,
+				9E8FBF601DA3FD14005299B4 /* MultiDataSet.xml in Resources */,
 				9E514E481D97C66F00EE00D5 /* vanquish.scn in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

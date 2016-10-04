@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     let vuforiaLiceseKey = "AXX41A7/////AAAAGdnTMxX0TkntryV9IUshjSYJOLgT6KsXg/N3xbWCHyFhnQSIzBJOmNIxdPYYs1eLlB2jM8lo/28KDvMhEmqa00As5+DBrDpt6QutoT0HFo+vF/fH1qzZv9qaFfqWOvTyxiE746NfkOsz3YWdtD+D4coL3JuH0D/4CQjoQmp715DHaS/fpZ68uSfACJ/jo+6ko6/eqkcUs0uJmBCmorw85N6aFynvXPGK47rrsdKK73M2xgMEfk6jbisu1l22juLnK02KOXkZxCFcCrhs8nYewV2PrK7DEJI3XXQp8d8Xrkf5p6blxOlRyppoi6nJPPmlv6tAKv+jV0TpCZOv3Y1qHUnEP+LyLN9lR5ugIxPX36yK"
-    let vuforiaDataSetFile = "Test2.xml"
+    let vuforiaDataSetFile = "MultiDataSet.xml"
     
     var vuforiaManager: VuforiaManager? = nil
     
@@ -132,12 +132,21 @@ extension ViewController: VuforiaManagerDelegate {
                 manager.eaglView.setNeedsChangeSceneWithUserInfo(["scene" : "stones"])
                 lastSceneName = "stones"
               }
-            }else if trackerableName == "car"  {
+            }else if trackerableName == "un"  {
             
-                if lastSceneName != "car" {
+                if lastSceneName != "un" {
                 
-                    manager.eaglView.setNeedsChangeSceneWithUserInfo(["scene" : "car"])
-                    lastSceneName = "car"
+                    manager.eaglView.setNeedsChangeSceneWithUserInfo(["scene" : "un"])
+                    lastSceneName = "un"
+                    
+                }
+                
+            }else if trackerableName == "mn"  {
+                
+                if lastSceneName != "mn" {
+                    
+                    manager.eaglView.setNeedsChangeSceneWithUserInfo(["scene" : "mn"])
+                    lastSceneName = "mn"
                     
                 }
                 
@@ -180,11 +189,11 @@ extension ViewController: VuforiaEAGLViewSceneSource, VuforiaEAGLViewDelegate {
         if let sceneName = userInfo["scene"] as? String {
          
             print(sceneName)
-          if sceneName == "stones" {
+          if sceneName == "mn" {
          
             return createStonesScene(with: view)
             
-           }else if sceneName == "car"{
+           }else if sceneName == "un"{
         
             return createStonesScene(with: view)
             
@@ -232,7 +241,7 @@ extension ViewController: VuforiaEAGLViewSceneSource, VuforiaEAGLViewDelegate {
         let vanScene = SCNScene(named: "vanquish.scn")!
         let element = vanScene.rootNode.childNodes[0]
         let scene = SCNScene()
-        element.position = SCNVector3Make(0, 0, -1.0)
+        element.position = SCNVector3(0, 0, -1.0)
         
         let lightNode = SCNNode()
         lightNode.light = SCNLight()
