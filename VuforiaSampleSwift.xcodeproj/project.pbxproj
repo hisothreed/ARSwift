@@ -27,6 +27,10 @@
 		92AA11101D27A5EB00E56CBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92AA110F1D27A5EB00E56CBE /* Assets.xcassets */; };
 		92AA11131D27A5EB00E56CBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92AA11111D27A5EB00E56CBE /* LaunchScreen.storyboard */; };
 		92AA11851D27B96300E56CBE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92AA11841D27B96300E56CBE /* Localizable.strings */; };
+		9E1A96ED1DA930EE00B4F3F1 /* food.dat in Resources */ = {isa = PBXBuildFile; fileRef = 9E1A96EB1DA930EE00B4F3F1 /* food.dat */; };
+		9E1A96EE1DA930EE00B4F3F1 /* food.xml in Resources */ = {isa = PBXBuildFile; fileRef = 9E1A96EC1DA930EE00B4F3F1 /* food.xml */; };
+		9E1A96F51DA934B200B4F3F1 /* Pizza.scn in Resources */ = {isa = PBXBuildFile; fileRef = 9E1A96F41DA934B200B4F3F1 /* Pizza.scn */; };
+		9E1A96F71DA93B0500B4F3F1 /* Texture pizza.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 9E1A96F61DA93B0500B4F3F1 /* Texture pizza.bmp */; };
 		9E4AD8641D97C0A600302B4F /* Dragon_Bump_Col2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9E4AD8631D97C0A600302B4F /* Dragon_Bump_Col2.jpg */; };
 		9E4AD8661D97C26600302B4F /* Dragon.scn in Resources */ = {isa = PBXBuildFile; fileRef = 9E4AD8651D97C26600302B4F /* Dragon.scn */; };
 		9E514E481D97C66F00EE00D5 /* vanquish.scn in Resources */ = {isa = PBXBuildFile; fileRef = 9E514E471D97C66F00EE00D5 /* vanquish.scn */; };
@@ -159,6 +163,10 @@
 		92AA11141D27A5EB00E56CBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92AA11801D27A6CD00E56CBE /* VuforiaSampleSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VuforiaSampleSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		92AA11841D27B96300E56CBE /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		9E1A96EB1DA930EE00B4F3F1 /* food.dat */ = {isa = PBXFileReference; lastKnownFileType = file; name = food.dat; path = ../../../../../Downloads/food/food.dat; sourceTree = "<group>"; };
+		9E1A96EC1DA930EE00B4F3F1 /* food.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = food.xml; path = ../../../../../Downloads/food/food.xml; sourceTree = "<group>"; };
+		9E1A96F41DA934B200B4F3F1 /* Pizza.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Pizza.scn; sourceTree = SOURCE_ROOT; };
+		9E1A96F61DA93B0500B4F3F1 /* Texture pizza.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = "Texture pizza.bmp"; sourceTree = SOURCE_ROOT; };
 		9E4AD8631D97C0A600302B4F /* Dragon_Bump_Col2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Dragon_Bump_Col2.jpg; sourceTree = SOURCE_ROOT; };
 		9E4AD8651D97C26600302B4F /* Dragon.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = Dragon.scn; path = VuforiaSampleSwift/Dragon.scn; sourceTree = SOURCE_ROOT; };
 		9E514E471D97C66F00EE00D5 /* vanquish.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = vanquish.scn; path = VuforiaSampleSwift/vanquish.scn; sourceTree = SOURCE_ROOT; };
@@ -377,6 +385,8 @@
 		927B76EE1D28070D00C4F5CC /* ImageTargets */ = {
 			isa = PBXGroup;
 			children = (
+				9E1A96EB1DA930EE00B4F3F1 /* food.dat */,
+				9E1A96EC1DA930EE00B4F3F1 /* food.xml */,
 				9E8FBF5D1DA3FD14005299B4 /* MultiDataSet.dat */,
 				9E8FBF5E1DA3FD14005299B4 /* MultiDataSet.xml */,
 				9E514E591D97F34A00EE00D5 /* Test2.dat */,
@@ -429,6 +439,8 @@
 		9EF3E6271D9700B900B73C4B /* 3DS */ = {
 			isa = PBXGroup;
 			children = (
+				9E1A96F61DA93B0500B4F3F1 /* Texture pizza.bmp */,
+				9E1A96F41DA934B200B4F3F1 /* Pizza.scn */,
 				9E8EDC8E1D97305D00BF3DC0 /* vanquish.dae */,
 				9E4AD8651D97C26600302B4F /* Dragon.scn */,
 				9E514E471D97C66F00EE00D5 /* vanquish.scn */,
@@ -502,6 +514,7 @@
 				9E8FBF5F1DA3FD14005299B4 /* MultiDataSet.dat in Resources */,
 				9E514E5B1D97F34A00EE00D5 /* Test2.dat in Resources */,
 				9EF3E6231D96F8E900B73C4B /* StonesAndChips.dat in Resources */,
+				9E1A96F71DA93B0500B4F3F1 /* Texture pizza.bmp in Resources */,
 				9EF3E6261D96F8E900B73C4B /* Tarmac.xml in Resources */,
 				9EF3E6241D96F8E900B73C4B /* StonesAndChips.xml in Resources */,
 				92AA11131D27A5EB00E56CBE /* LaunchScreen.storyboard in Resources */,
@@ -509,13 +522,16 @@
 				9E514E4B1D97DF1A00EE00D5 /* target.dat in Resources */,
 				9E8EDC8F1D97305D00BF3DC0 /* vanquish.dae in Resources */,
 				92AA11851D27B96300E56CBE /* Localizable.strings in Resources */,
+				9E1A96ED1DA930EE00B4F3F1 /* food.dat in Resources */,
 				9E4AD8641D97C0A600302B4F /* Dragon_Bump_Col2.jpg in Resources */,
+				9E1A96EE1DA930EE00B4F3F1 /* food.xml in Resources */,
 				9E514E5C1D97F34A00EE00D5 /* Test2.xml in Resources */,
 				92AA110E1D27A5EB00E56CBE /* Main.storyboard in Resources */,
 				9E514E4C1D97DF1A00EE00D5 /* target.xml in Resources */,
 				9EF3E6251D96F8E900B73C4B /* Tarmac.dat in Resources */,
 				9E4AD8661D97C26600302B4F /* Dragon.scn in Resources */,
 				9E8FBF601DA3FD14005299B4 /* MultiDataSet.xml in Resources */,
+				9E1A96F51DA934B200B4F3F1 /* Pizza.scn in Resources */,
 				9E514E481D97C66F00EE00D5 /* vanquish.scn in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     let vuforiaLiceseKey = "AXX41A7/////AAAAGdnTMxX0TkntryV9IUshjSYJOLgT6KsXg/N3xbWCHyFhnQSIzBJOmNIxdPYYs1eLlB2jM8lo/28KDvMhEmqa00As5+DBrDpt6QutoT0HFo+vF/fH1qzZv9qaFfqWOvTyxiE746NfkOsz3YWdtD+D4coL3JuH0D/4CQjoQmp715DHaS/fpZ68uSfACJ/jo+6ko6/eqkcUs0uJmBCmorw85N6aFynvXPGK47rrsdKK73M2xgMEfk6jbisu1l22juLnK02KOXkZxCFcCrhs8nYewV2PrK7DEJI3XXQp8d8Xrkf5p6blxOlRyppoi6nJPPmlv6tAKv+jV0TpCZOv3Y1qHUnEP+LyLN9lR5ugIxPX36yK"
-    let vuforiaDataSetFile = "MultiDataSet.xml"
+    let vuforiaDataSetFile = "food.xml"
     
     var vuforiaManager: VuforiaManager? = nil
     
@@ -23,10 +23,10 @@ class ViewController: UIViewController {
     
     }
     
-    @IBAction func dismis() {
-     print("dismiss pressed")
-      navigationController?.popViewController(animated: true)
-    }
+//    @IBAction func dismis() {
+//     print("dismiss pressed")
+//      navigationController?.popViewController(animated: true)
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -132,12 +132,12 @@ extension ViewController: VuforiaManagerDelegate {
                 manager.eaglView.setNeedsChangeSceneWithUserInfo(["scene" : "stones"])
                 lastSceneName = "stones"
               }
-            }else if trackerableName == "un"  {
+            }else if trackerableName == "Pizza"  {
             
-                if lastSceneName != "un" {
+                if lastSceneName != "Pizza" {
                 
-                    manager.eaglView.setNeedsChangeSceneWithUserInfo(["scene" : "un"])
-                    lastSceneName = "un"
+                    manager.eaglView.setNeedsChangeSceneWithUserInfo(["scene" : "Pizza"])
+                    lastSceneName = "Pizza"
                     
                 }
                 
@@ -193,7 +193,7 @@ extension ViewController: VuforiaEAGLViewSceneSource, VuforiaEAGLViewDelegate {
          
             return createStonesScene(with: view)
             
-           }else if sceneName == "un"{
+           }else if sceneName == "Pizza"{
         
             return createStonesScene(with: view)
             
@@ -212,44 +212,21 @@ extension ViewController: VuforiaEAGLViewSceneSource, VuforiaEAGLViewDelegate {
     }
      func createStonesScene(with view: VuforiaEAGLView) -> SCNScene {
         
-        
-//        scene.rootNode.addChildNode(lightNode)
-//        
-//        let ambientLightNode = SCNNode()
-//        ambientLightNode.light = SCNLight()
-//        ambientLightNode.light?.type = .ambient
-//        ambientLightNode.light?.color = UIColor.darkGray
-//        scene.rootNode.addChildNode(ambientLightNode)
-//        
-//        let planeNode = SCNNode()
-//        planeNode.name = "plane"
-//        planeNode.geometry = SCNPlane(width: 247.0/view.objectScale, height: 173.0/view.objectScale)
-//        planeNode.position = SCNVector3Make(0, 0, -1)
-//        let planeMaterial = SCNMaterial()
-//        planeMaterial.diffuse.contents = UIColor.green
-//        planeMaterial.transparency = 0.6
-//        planeNode.geometry?.firstMaterial = planeMaterial
-//        scene.rootNode.addChildNode(planeNode)
-//        
-//        let boxNode = SCNNode()
-//        boxNode.name = "box"
-//        boxNode.geometry = SCNBox(width:2, height:2, length:2, chamferRadius:0.0)
-//        boxNode.geometry?.firstMaterial = boxMaterial
-//        scene.rootNode.addChildNode(boxNode)
-        
-        
-        let vanScene = SCNScene(named: "vanquish.scn")!
+        let vanScene = SCNScene(named: "Pizza.scn")!
         let element = vanScene.rootNode.childNodes[0]
+        
         let scene = SCNScene()
-        element.position = SCNVector3(0, 0, -1.0)
+        element.position = SCNVector3Make(0, 0, -1.0)
+//        element.scale = SCNVector3Make(0.3, 0.3, 0.3)
+        
         
         let lightNode = SCNNode()
         lightNode.light = SCNLight()
         lightNode.light?.type = .omni
         lightNode.light?.color = UIColor.lightGray
-        lightNode.position = SCNVector3(x:0, y:-10, z:10)
+        lightNode.position = SCNVector3(x:1, y:2.0, z:2.0)
+        
         scene.rootNode.addChildNode(lightNode)
-
         scene.rootNode.addChildNode(element)
         
         return scene
@@ -294,7 +271,8 @@ extension ViewController: VuforiaEAGLViewSceneSource, VuforiaEAGLViewDelegate {
     
     func vuforiaEAGLView(_ view: VuforiaEAGLView!, didTouchDownNode node: SCNNode!) {
         print("touch down \(node.name)\n")
-        boxMaterial.transparency = 0.6
+        SCNTransaction.animationDuration = 1.0
+        
     }
     
     func vuforiaEAGLView(_ view: VuforiaEAGLView!, didTouchUp node: SCNNode!) {
